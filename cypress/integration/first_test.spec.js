@@ -4,7 +4,6 @@ var clickLocationField = ':nth-child(2) > ._slilk2 > form > ._xp659v > :nth-chil
 var selectLocationFromSuggestion = '#Koan-magic-carpet-koan-search-bar__option-1'
 
        it('Enter Location' , () => {
-
             cy.get(clickLocationField)
             .type('Kuala Lumpur')
             cy.get(selectLocationFromSuggestion).focus().click()
@@ -12,7 +11,6 @@ var selectLocationFromSuggestion = '#Koan-magic-carpet-koan-search-bar__option-1
  });
 
          it('Select  Date' , () => {
-
              cy.get('#Koan-magic-carpet-koan-search-bar__option-1').focus().debug()//.click()
              cy.get('[data-testid=" May 29, 2020"]')
 
